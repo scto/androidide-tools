@@ -36,8 +36,8 @@ print_help() {
     echo "This script helps you easily install build tools in AndroidIDE."
     echo ""
     echo "Usage:"
-    echo "${0} -s 34.0.4 -c -j 17"
-    echo "This will install Android SDK 34.0.4 with command line tools and JDK 17."
+    echo "${0} -s 35.0.2 -c -j 17"
+    echo "This will install Android SDK 35.0.2 with command line tools and JDK 17."
     echo ""
     echo "Options :"
     echo "-i   Set the installation directory. Defaults to \$HOME."
@@ -140,12 +140,13 @@ download_comp() {
 
 arch=$(uname -m)
 install_dir=$HOME
-sdkver_org=34.0.4
+sdkver_org=35.0.2
 with_cmdline=false
-manifest="https://raw.githubusercontent.com/AndroidIDEOfficial/androidide-tools/main/manifest.json"
+#manifest="https://raw.githubusercontent.com/iamfaraz/androidide-tools/main/manifest.json"
+manifest="https://raw.githubusercontent.com/scto/androidide-tools/main/manifest.json"
 pkgm="pkg"
 pkg_curl="libcurl"
-jdk_version="17"
+jdk_version="21"
 
 OPTIND=1
 while getopts "uch?i:s:j:m:a:p:l:" opt; do
