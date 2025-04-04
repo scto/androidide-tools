@@ -7,8 +7,8 @@ AndroidIDE build tools installer
 This script helps you easily install build tools in AndroidIDE.
 
 Usage:
-./scripts/idesetup -s 34.0.4 -c -j 17
-This will install Android SDK 34.0.4 with command line tools and JDK 17.
+./scripts/idesetup -s 35.0.2 -c -j 17
+This will install Android SDK 35.0.2 with command line tools and JDK 17.
 
 Options :
 -i   Set the installation directory. Defaults to $HOME.
