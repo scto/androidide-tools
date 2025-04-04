@@ -163,7 +163,7 @@ download_and_extract() {
 
   echo ""
 
-  if [ $sdk_version = "35.0.2"]; then
+  if [ "$sdk_version" == "35.0.2" ]; then
     mkdir -p android-sdk-aarch64
     cd android-sdk-aarch64
 
